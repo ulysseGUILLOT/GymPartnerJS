@@ -16,6 +16,8 @@ const Exercice = sequelize.define('Exercice', {
     weight: {
         type: DataTypes.INTEGER
     }
+},{
+    timestamps: false,
 });
 
 module.exports = Exercice;
