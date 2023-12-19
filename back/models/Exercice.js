@@ -1,7 +1,7 @@
 // modèle Exercice
 
 const {Sequelize, DataTypes} = require('sequelize');
-const sequelize = new Sequelize('sqlite::memory:');
+const sequelize = require('../database/init')
 
 const Exercice = sequelize.define('Exercice', {
     name: {
